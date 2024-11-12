@@ -767,42 +767,38 @@ section.hero .row div {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: var(--primary-color);
-    color: var(--white-color);
-    position: relative;
-    padding: 80px 0;
-    overflow: hidden;
-    height: 100vh;
 }
-.why-choose-us::before {
-    content: "";
-    width: 1000px;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    background-image: url("../../Images/wcu-1.jpg");
+.why-choose-us .wcu-content {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.wcu-content .row {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    height: 50px;
+}
+.why-choose-us .wcu-projects-bar {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background: url(../../Images/wcu-1.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    filter: brightness(0.8);
 }
-.why-choose-us .row {
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    width: 1600px;
-    height: 500px;
+.wcu-projects-bar .row {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    background: pink;
+    height: 50px;
 }
-
-.why-choose-us .wcu-content {
-    flex: 1;
-}
-
-.why-choose-us .wcu-projects-bar {
-    flex: 1;
-    z-index: 5;
-}
-
 /* End Why Choose Us */
