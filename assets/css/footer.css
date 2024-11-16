@@ -1,0 +1,134 @@
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 10px 0px;
+    background: var(--primary-color);
+    color: #fff;
+    flex-direction: column;
+}
+footer p {
+    color: #fff;
+}
+footer ion-icon.md.hydrated {
+    color: var(--secondary-color);
+}
+footer .row{
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+footer .footer-about {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 50px;
+}
+footer .footer-about img {
+    width: 200px;
+}
+
+footer .footer-quick-links {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .footer-quick-links ul  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer ul li {
+    list-style-type: none;
+}
+footer .footer-quick-links ul li  {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+footer .footer-newsletter {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-newsletter form {
+    display: flex;
+    gap: 0;
+}
+footer input[type="email"] {
+    width: 80%;
+}
+
+footer input[type="button"] {
+    width: 20%;
+}
+
+footer .footer-newsletter form input[type="button"]:hover {
+    background: var(--secondary-color) ;
+}
+.footer-newsletter ul {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-newsletter ul li a ion-icon.md.hydrated {
+    font-size: 26px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.footer-newsletter ul li a ion-icon.md.hydrated:hover {
+    transform: scale(0.85);
+    background: var(--white-color);
+}
+
+footer .copyright {
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ffffff2d;
+}
+
+@media(max-width: 500px) {
+    footer {
+        padding: 60px 10px 0;
+    }
+    footer .row {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        padding-bottom: 20px;
+    }
+    footer .footer-about {
+        width: 100%;
+        padding: 0;
+    }
+    footer .footer-quick-links {
+        width: 100%;
+    }
+    footer .footer-newsletter {
+        width: 100%;
+    }
+    .footer-newsletter ul {
+        gap: 10px;
+        justify-content: center;
+    }
+    .footer-newsletter ul li a ion-icon.md.hydrated {
+        font-size: 20px;
+    }
+    footer .copyright {
+        width: 100%;
+    }
+}
+/* End Footer */
