@@ -995,7 +995,7 @@ h3 {
 
 .cs-content {
     text-align: center;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1124,7 +1124,7 @@ h3 {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     gap: 10px;
 }
 
@@ -1184,3 +1184,105 @@ swiper-container {
     }
 }
 /* End Testimonials */
+
+/* Blogs */
+
+.blogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 10px;
+}
+
+.blogs .row {
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blogs-content {
+    text-align: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blogs-card-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.blogs-card {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs-card .img-overlay {
+    position: relative;
+}
+.blogs-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.blogs-category {
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    background: var(--secondary-color);
+    padding: 10px 20px;
+    width: 200px;
+}
+.blogs-card-content {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.blogs-card-content h3 {
+    color: var(--primary-color);
+}
+.blogs-card-content a {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+@media(max-width: 500px) {
+    .blogs {
+        padding: 50px 10px;
+    }
+    .blogs .row {
+        width: 100%;
+    }
+    .blogs-content {
+        width: 100%;
+    }
+    .blogs-card-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .blogs-card-content {
+        padding: 20px 0;
+    }
+    .blogs-card-content h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .blogs-card-content .cta {
+        font-size: 14px;
+    }
+}
+/* End Blogs */
