@@ -943,26 +943,244 @@ h3 {
         flex-direction: column;
         height: auto;
     }
+
     .wcu-project-card-flex {
         flex-direction: column;
     }
+
     .why-choose-us .wcu-content {
         width: 100%;
     }
+
     .why-choose-us .wcu-projects-bar {
         width: 100%;
     }
+
     .wcu-content .row {
         width: 100%;
         padding: 70px 20px;
     }
+
     .wcu-projects-bar .row {
         width: 100%;
         padding: 20px;
     }
+
     .wcu-card-flex {
         flex-direction: column;
         margin: 10px 0;
     }
 }
+
 /* End Why Choose Us */
+
+/* Case Studies */
+
+.case-studies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 10px;
+}
+
+.case-studies .row {
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cs-content {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cs-card-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cs-card {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #222b4c50;
+}
+
+.cs-card img {
+    width: 100%;
+}
+
+.cs-card-content {
+    padding: 40px 10px 30px;
+    /* background: var(--secondary-color); */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+.cs-card-content:hover {
+    background: var(--primary-color);
+    cursor: cell;
+}
+
+.cs-card-content h3 {
+    color: var(--primary-color);
+}
+
+.cs-card-content:hover h3 {
+    color: var(--white-color);
+}
+
+.cs-card-content .card-btn {
+    background: var(--acent-hover-color);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.cs-card-content:hover .card-btn {
+    background: var(--acent-color);
+}
+
+.cs-card-content .card-btn ion-icon.md.hydrated {
+    font-size: 35px;
+    color: var(--white-color);
+}
+
+@media(max-width: 500px) {
+    .cs-content {
+        width: 100%;
+    }
+
+    .cs-card-content h3 {
+        font-size: 20px;
+    }
+
+    .cs-card-flex {
+        flex-direction: column;
+    }
+}
+
+/* End Case Studies */
+
+/* Testimonials */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 150px 10px;
+    background: url(../../Images/testimonials-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    opacity: 0.85;
+    z-index: -1;
+}
+
+.testimonials .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1600px;
+    gap: 50px;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.testimonial-content .heading-border {
+    color: var(--secondary-color);
+}
+
+.testimonial-content h2 {
+    color: var(--white-color);
+}
+
+.testimonial-content p {
+    color: var(--white-color);
+}
+
+/* swiper */
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.test-slides {
+    font-size: 16px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 20px;
+    flex-direction: column;
+    height: 300px;
+}
+
+.test-user {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+.test-user img {
+    width: 80px;
+    border-radius: 50%;
+}
+@media(max-width: 500px) {
+    .testimonials {
+        padding: 60px 10px;
+    }
+    .testimonials .row {
+        width: 100%;
+        gap: 20px;
+    }
+    .testimonial-content {
+        width: 100%;
+    }
+    .test-slides {
+        padding: 30px;
+    }
+}
+/* End Testimonials */

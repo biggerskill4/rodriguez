@@ -10,3 +10,4 @@ const counter = setInterval(() => {
         document.querySelector('.counter').textContent = count + '+'; // Optionally display the final count
     }
 }, 20);
+
