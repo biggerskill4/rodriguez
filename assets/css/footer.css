@@ -52,6 +52,9 @@ footer .footer-quick-links ul li  {
     align-items: center;
     gap: 5px;
 }
+footer .footer-quick-links ul li a {
+    color: var(--white-color);
+}
 footer .footer-newsletter {
     width: 30%;
     display: flex;
@@ -129,6 +132,12 @@ footer .copyright {
     }
     footer .copyright {
         width: 100%;
+    }
+    footer input[type="email"] {
+        width: 75%;
+    }
+    footer input[type="button"] {
+        width: 25%;
     }
 }
 /* End Footer */

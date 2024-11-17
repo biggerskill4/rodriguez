@@ -89,6 +89,12 @@ form input {
     padding: 15px;
     border: none;
 }
+
+form select {
+    padding: 17px;
+    border: none;
+}
+
 form input[type="button"] {
     background: var(--acent-color);
     color: var(--primary-color);
@@ -98,11 +104,33 @@ form input[type="button"] {
     cursor: pointer;
     transition: 0.3s;
 }
+
+form input[type="button"] {
+    background: var(--acent-color);
+    color: var(--primary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 form input[type="button"]:hover {
     background: var(--white-color);
 }
-input:focus {outline:none;}
+textarea {
+    padding: 15px;
+}
+input:focus {
+    outline: none;
+}
 
+select:focus {
+    outline: none;
+}
+textarea:focus {
+    outline: none;
+}
 
 @media (max-width: 500px) {
     .themed-fill-btn {
@@ -1184,25 +1212,31 @@ swiper-container {
     align-items: center;
     gap: 20px;
 }
+
 .test-user img {
     width: 80px;
     border-radius: 50%;
 }
+
 @media(max-width: 500px) {
     .testimonials {
         padding: 60px 10px;
     }
+
     .testimonials .row {
         width: 100%;
         gap: 20px;
     }
+
     .testimonial-content {
         width: 100%;
     }
+
     .test-slides {
         padding: 30px;
     }
 }
+
 /* End Testimonials */
 
 /* Blogs */
@@ -1249,11 +1283,13 @@ swiper-container {
 .blogs-card .img-overlay {
     position: relative;
 }
+
 .blogs-card img {
     width: 100%;
     height: 350px;
     object-fit: cover;
 }
+
 .blogs-category {
     position: absolute;
     left: 20px;
@@ -1262,6 +1298,7 @@ swiper-container {
     padding: 10px 20px;
     width: 200px;
 }
+
 .blogs-card-content {
     padding: 30px 0;
     display: flex;
@@ -1269,9 +1306,11 @@ swiper-container {
     flex-direction: column;
     gap: 10px;
 }
+
 .blogs-card-content h3 {
     color: var(--primary-color);
 }
+
 .blogs-card-content a {
     color: var(--primary-color);
     font-size: 18px;
@@ -1280,30 +1319,173 @@ swiper-container {
     align-items: center;
     gap: 5px;
 }
+
 @media(max-width: 500px) {
     .blogs {
         padding: 50px 10px;
     }
+
     .blogs .row {
         width: 100%;
     }
+
     .blogs-content {
         width: 100%;
     }
+
     .blogs-card-flex {
         flex-direction: column;
         gap: 20px;
     }
+
     .blogs-card-content {
         padding: 20px 0;
     }
+
     .blogs-card-content h3 {
         font-size: 18px;
         line-height: 24px;
     }
+
     .blogs-card-content .cta {
         font-size: 14px;
     }
 }
+
 /* End Blogs */
 
+/* tax Section */
+.tax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 10px;
+}
+.tax .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    gap: 20px;
+}
+.tax .row .tax-refund {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tax-card {
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.tax-card p a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.tax-card p {
+    color: var(--white-color);
+}
+.tax-card form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.tax-card select#state {
+    width: 80%;
+}
+.tax-card input[type="button"] {
+    width: 20%;
+}
+.tax-card input[type="button"]:hover {
+    background: var(--acent-color);
+}
+
+.tax .tax-newsletter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.tax-newsletter form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+}
+.tax-newsletter input {
+    width: 100%;
+    border: 1px solid #222b4c4d;
+}
+.tax-newsletter textarea {
+    width: 100%;
+    border: 1px solid #222b4c4d;
+    border-radius: 0;
+}
+.tax-newsletter input[type=button] {
+    width: 100%;
+    border: none;
+}
+.tax-newsletter input[type=button]:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.cta-tax:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.tax-newsletter .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.tax-newsletter .links a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.tax-newsletter p {
+    color: var(--primary-color);
+}
+
+@media(max-width: 500px) {
+    .tax {
+        width: 100%;
+        padding: 50px 10px 60px;
+    }
+    .tax .row {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .tax h3 {
+        font-size: 20px;
+    }
+    .tax-card form {
+        width: 100%;
+    }
+    .tax-card select#state {
+        width: 75%;
+    }
+    .tax-card input[type="button"] {
+        width: 25%;
+    }
+     .tax-newsletter form {
+        width: 100%;
+    }
+
+}
+/* End tax Section */
