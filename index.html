@@ -18,8 +18,8 @@
             <div class="row">
                 <div class="list-icon">
                     <ul>
-                        <li><ion-icon name="location"></ion-icon> 409 N CAMPUS DR STE 107 GARDEN CITY, KS 67846</li>
-                        <li><ion-icon name="call"></ion-icon> 620-765-4208</li>
+                        <li><ion-icon name="location"></ion-icon> Your Address</li>
+                        <li><ion-icon name="call"></ion-icon> 123-456-7890</li>
                     </ul>
                 </div>
                 <div class="social-icons">
@@ -514,16 +514,16 @@
             <div class="tax-newsletter">
                 <h2>Sign up for our Tax Newsletter</h2>
                 <form action="form">
-                        <input type="text" name="name" id="name" placeholder="Type Your Name">
-                        <input type="email" name="email" id="email" placeholder="email@gmail.com">
-                        <textarea name="text" id="text" rows="4" placeholder="Type Your Message"></textarea>
-                        <input type="button" value="Submit">
+                    <input type="text" name="name" id="name" placeholder="Type Your Name">
+                    <input type="email" name="email" id="email" placeholder="email@gmail.com">
+                    <textarea name="text" id="text" rows="4" placeholder="Type Your Message"></textarea>
+                    <input type="button" value="Submit">
                 </form>
                 <h2>Secure Client Portal Login</h2>
                 <a href="#" class="cta-tax themed-fill-btn">Client Portal Login</a>
                 <div class="links">
-                <a href="#">Forgot your password?</a>
-                <a href="#">Guide: Using the Portal</a>
+                    <a href="#">Forgot your password?</a>
+                    <a href="#">Guide: Using the Portal</a>
                 </div>
                 <p>Download Secure Client Portal App:</p>
             </div>
@@ -531,6 +531,42 @@
     </section>
     <!-- End Tax Newsletter Section -->
 
+    <!-- Contact us -->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-content">
+                <h2>Main Office</h2>
+                <ul>
+                    <li><a href="#"><b>Email:</b> youremmail@.com</a></li>
+                    <li><a href="#"><b>Phone:</b> 123-456-7890</a></li>
+                    <li><a href="#"><b>Fax:</b> 123-456-7890</a></li>
+                </ul>
+                <hr>
+                <p>Your Address</p>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6511979.9257604405!2d-124.59204631870465!3d37.16036251734097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2s!4v1731929776383!5m2!1sen!2s"
+                        width="95%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send us an Email</h2>
+                <form action="form">
+                    <div class="row-form">
+                        <input type="text" name="name" id="first-name" placeholder="Type Your First Name" required>
+                        <input type="text" name="name" id="last-name" placeholder="Type Your Last Name">
+                    </div>
+                    <input type="email" name="email" id="email" placeholder="email@gmail.com">
+                    <textarea name="text" id="text" rows="4" placeholder="Type Your Message"></textarea>
+                    <div class="g-recaptcha" id="rcaptcha" data-sitekey="6Lekn4IqAAAAAAK7NHcbYn7NEgmCcgcQWduqNP9R"></div>
+                    <span id="captcha" style="color:red"></span>
+                    <input type="button" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact us -->
 
     <!-- footer -->
     <footer>
@@ -541,9 +577,9 @@
                     ensuring your financial success. With our experienced team by your side, you can navigate the
                     complexities of finance with confidence and peace of mind.</p>
                 <ul>
-                    <li><ion-icon name="location"></ion-icon> 409 N CAMPUS DR STE 107 GARDEN CITY, KS 67846</li>
-                    <li><ion-icon name="call"></ion-icon> 620-765-4208</li>
-                    <li><ion-icon name="call"></ion-icon> 620-765-4208</li>
+                    <li><ion-icon name="location"></ion-icon> Your Address</li>
+                    <li><ion-icon name="call"></ion-icon> 123-456-7890</li>
+                    <li><ion-icon name="call"></ion-icon> 123-456-7890</li>
                 </ul>
             </div>
             <div class="footer-quick-links">
@@ -587,6 +623,22 @@
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+
+        function get_action(form) {
+            var v = grecaptcha.getResponse();
+            if (v.length == 0) {
+                document.getElementById('captcha').innerHTML = "You can't leave Captcha Code empty";
+                return false;
+            }
+            else {
+                document.getElementById('captcha').innerHTML = "Captcha completed";
+                return true;
+            }
+        }
+
+    </script>
 </body>
 
 </html>
